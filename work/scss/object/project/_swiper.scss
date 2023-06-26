@@ -1,0 +1,63 @@
+@use "../../global" as *;
+.swiper-container {
+    // width: 100%;
+    padding-bottom: 30px;
+    position: relative;
+}
+  
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    @include fontsize(30);
+
+    display: block;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #391e88;
+    width: 2rem;;
+    height: 2rem;;
+    border-top: solid 0.5rem #391e88;
+    border-right: solid 0.5rem #391e88;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/* 前への矢印カスタマイズ */
+.swiper-button-prev::before {
+    border-bottom: 20px solid transparent;
+    border-right: 30px solid #ff4500;
+    border-top: 20px solid transparent;
+  }
+  .swiper-button-prev::after {
+    transform: rotate(-135deg);
+  }
+  /* 次への矢印カスタマイズ */
+  .swiper-button-next::before {
+    border-bottom: 20px solid transparent;
+    border-left: 30px solid #ff4500;
+    border-top: 20px solid transparent;
+  }
+  .swiper-button-next::after {
+    transform: rotate(45deg);
+  }
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 0px;
+    text-align: right;
+    left: 0;
+    width: 100%;
+}
+    
+.swiper-pagination-bullet-active {
+    background: $color-primary;
+}
+  

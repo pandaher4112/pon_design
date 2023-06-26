@@ -1,0 +1,62 @@
+@use "../../global" as *;
+.works{
+    margin-top: 140px;
+    width: 100%;
+    @include mq(medium, max, true) {
+      margin-top: 40px;
+    }
+  }
+.p-worksBox{
+    margin: 0 auto;
+    width: 100%;
+}
+.bl-works{
+    max-width: $max-width;
+    margin: 0 auto;
+    position: relative;
+    &::after{
+        content: "";
+        top: 0;
+        right: 0;
+        position: absolute;
+        background-color: #f0f0f0;
+        width: 66%;
+        height: 100%;
+        z-index: -1;
+        @include mq(medium, max, true) {
+          width: 100%;
+          top: 30%;
+          height: 70%;
+        }
+    }
+}
+.bl-worksBox{
+    padding: 60px 0 60px 0;
+    display: flex;
+    justify-content: space-between;
+    @include mq(medium,max,true){
+      display: block;
+      padding: 30px 20px 60px 20px;
+    }
+  }
+.bl-worksBoxImg{
+    top: 60px;
+    left: 20px;
+    width: 60%;
+    max-width: 750px;
+    height: auto;
+    @include mq(medium, max, true) {
+      margin: 0 auto;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+}
+.bl-worksBoxCard{
+    display:flex;
+    justify-content:center ;
+    align-items: center;    
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+}

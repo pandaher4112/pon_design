@@ -1,0 +1,25 @@
+@use "../../global" as *;
+.contact{
+    margin-top: 110px;
+    @include mq(medium, max, true) {
+        margin-top:40px;
+    }
+}
+.bl-contact{
+    width: 100%;
+    padding: 80px;
+    background-color: #F7F7F7;
+    @include mq(medium, max, true) {
+        padding:60px 0;
+    }
+}
+.bl-contactBox{
+    text-align: center;
+}
+.el-contactBoxDescription{
+    margin-top: 30px;
+    @include mq(medium, max, true) {
+        @include fontsize(14);
+        line-height: 1.8;
+    }
+}

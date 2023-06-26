@@ -1,0 +1,7 @@
+@use "../../global" as *;
+.sepBr{
+    display: none;
+    @include mq(medium, max, true) {
+        display: block;
+    }
+}

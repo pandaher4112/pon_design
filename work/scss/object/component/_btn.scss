@@ -1,0 +1,36 @@
+@use "../../global" as *;
+.bl-commonBtn{
+    margin: 0 auto;
+    margin-top:25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 54px;
+    background: transparent linear-gradient(90deg, #7633A4 0%, #250D65 100%);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    @include fontsize(14);
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    color: #fff;
+    &:hover{
+        background: transparent linear-gradient(90deg, #250D65 0% , #7633A4 100%);
+        text-decoration: none;
+        &::after{
+            right: 16px;
+        }
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        right: 20px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5.7px 0 5.7px 6.41px;
+        border-color: transparent transparent transparent #fff;
+        transition: all 0.2s ease;
+    }    
+}

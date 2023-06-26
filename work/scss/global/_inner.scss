@@ -1,0 +1,12 @@
+//inner
+@mixin inner_sp {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@mixin inner {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 90px;
+    padding-right: 90px;
+}

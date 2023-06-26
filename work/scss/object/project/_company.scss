@@ -1,0 +1,52 @@
+@use "../../global" as *;
+.company{
+    width: 100%;
+    padding: 140px 0 0 0;
+    background-image: url("../../../img/bg-circle.png");
+    background-size: cover;
+    background-position: top -160% left 50%;
+    @include mq(medium, max, true) {
+        padding: 60px 0 0 0;
+    }
+}
+.bl-company{
+    margin: 0 auto;
+    margin-bottom: 55px;
+    max-width: $max-width;
+    width: 100%;
+    height: auto;
+    background-image: url("../../../img/bg-face.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: top 50% left 50%;
+    text-align: center;
+    @include mq(medium, max, true) {
+        background-image: none;
+    }
+}
+.el-companyMessege{
+    display: inline-block;
+    margin-top: 68px;
+    @include fontsize(40);
+    font-weight: bold;
+    letter-spacing: 0.50px;
+    color: $color-text;
+    @include mq(medium, max, true) {
+        margin-top: 30px;
+        @include fontsize(32);
+        line-height: 1.5;
+    }
+}
+.bl-companyCatch{
+    background:linear-gradient(180deg,transparent 80%,#f5f534 70%);
+}
+.el-companyDescription{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: $color-text;
+    @include mq(medium, max, true) {
+        @include fontsize(14);
+    }
+}

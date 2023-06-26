@@ -1,0 +1,30 @@
+@use "../../global" as *;
+.service{
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+}
+.bl-service{
+    max-width: $max-width;
+    @include mq(medium,max,true){
+        max-width: 100%;
+    }
+}
+.bl-serviceBox{
+    margin-top: 30px;
+}
+.bl-serviceBoxCards{
+    display:flex;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    @include mq(medium,max,ture){
+        margin: 10px;
+        display: block;
+    }
+}
+.bl-serviceBoxCardBlock{
+    padding: 0 15px;
+    @include mq(medium, max, true) {
+        margin-bottom: 40px;
+    }
+}

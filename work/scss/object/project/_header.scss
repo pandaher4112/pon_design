@@ -1,0 +1,20 @@
+@use "../../global" as *;
+.bl-header{
+    // width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bl-headerLogo{
+    width: 161px;
+    height: 50%;
+    @include mq(medium, max, true) {
+        width: 120px;        
+    }
+
+}
+.bl-headerNav{
+    @include mq(medium , max, true){
+        display:none;
+    };
+}

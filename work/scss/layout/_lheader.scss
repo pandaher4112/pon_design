@@ -1,0 +1,19 @@
+@use "../global" as *;
+.header{
+    width: 100%;
+    height: 86px;
+    background-color: rgba($color: $color-primary, $alpha: 0.0);
+    background-size: cover;
+    padding: 0 30px;
+    z-index: 99;
+    position: fixed;
+    display:grid;
+    // justify-content: space-between;
+    transition: 0.5s;
+    // place-items: center;
+    align-items: center;
+}
+.is-active {
+    height: 64px;
+    background-color: $color-primary;
+ }

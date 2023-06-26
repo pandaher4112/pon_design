@@ -1,0 +1,43 @@
+@use "../../global" as * ;
+.recruit{
+    margin-top: 125px;
+    @include mq(medium, max, true) {
+        margin-top: 5px;
+    }
+}
+.bl-recruit{
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    @include mq(medium, max, true) {
+        flex-direction: column-reverse;
+    }
+}
+.el-recuruitCatch{
+    margin-top: 30px;
+}
+.bl-recruitBox{
+    padding: 70px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color:#F7F7F7 ;
+    @include mq(medium, max, true) {
+        width: 100%;
+    }
+    
+}
+.bl-recruiteImg{
+    width: 60%;
+    background-position: center center;
+    img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    @include mq(medium, max, true) {
+        width: 100%;
+        height: 200px;
+    }
+    }
