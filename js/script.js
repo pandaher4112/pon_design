@@ -48,6 +48,7 @@ jQuery(function () {
 
   //スクロールに応じてヘッダーの背景色が変化
   jQuery(window).scroll(function () {
+    console.log ("top" + jQuery(this).scrollTop());
     if (jQuery(this).scrollTop() > 0) {
       jQuery(".header").addClass("is-active");
     } else {
@@ -57,7 +58,7 @@ jQuery(function () {
 
   //スクロールに応じてヘッダーの背景色が変化
   jQuery(window).scroll(function () {
-    if (jQuery(this).scrollTop() > 140) {
+    if (jQuery(this).scrollTop() >= 116) {
       jQuery(".p-newsPan").addClass("is-active2");
     } else {
       jQuery(".p-newsPan").removeClass("is-active2");

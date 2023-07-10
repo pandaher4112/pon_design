@@ -1,0 +1,56 @@
+@use "../../global" as *;
+.p-servicePage{
+    padding:70px 0;
+    @include mq(medium, max, true) {
+        padding: 40px 0;
+    }
+}
+.p-serviceBoxs{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: $max-width;
+}
+.p-serviceBox{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    @include mq(medium, max, true) {
+        display: block;
+    }
+}
+.p-servieBoxImg{
+    width: 40%;
+    margin-right: 50px;
+    background-size: cover;
+    @include mq(medium, max, true) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+.p-serviceBoxT{
+    width: 60%;
+    @include mq(medium, max, true) {
+        width: 100%;
+    }
+}
+.p-serviceBoxTitle{
+    margin-bottom: 20px;
+    font-weight: bold;
+    @include fontsize(24);
+    @include mq(medium, max, true) {
+        margin-bottom: 15px;
+        @include fontsize(18);
+        text-align: center;
+    }
+}
+.p-serviceBoxDescription{
+    @include fontsize(15);
+    line-height: 1.8;
+    @include mq(medium, max, true) {
+        @include fontsize(14)
+    }
+}

@@ -1,0 +1,126 @@
+@use "../../global" as *;
+.p-contactPage{
+    padding: 70px 0;
+    @include mq(medium, max, true) {
+        padding: 40px 0px;
+    }
+}
+.p-contactBoxs{
+    text-align: center;
+    max-width: 780px;
+    padding: 0 15px;
+    margin: 0 auto;  
+}
+.p-contactBox{
+    p{
+        @include fontsize(15);
+        margin-bottom:40px ;
+    }
+}
+.p-contactBoxDecs{
+    background-color: #f7f7f7;
+    padding: 90px;
+}
+.p-contactBoxDec{
+    text-align: left;
+    margin-bottom: 30px;
+}
+.p-contactLabels{
+    display: flex;
+    margin-bottom: 5px;
+
+}
+.p-contactLabel1{
+    @include fontsize(15);
+    font-weight: bold;
+}
+.p-contactLabel2{
+    margin-left: 10px;
+    font-weight: bold;
+    @include fontsize(12);
+}
+.p-contactkind{
+    text-align: left;
+    .form--radio {
+        display: none;
+        & + span {
+            cursor: pointer;
+            display: inline-block;
+            padding-left: 18px;
+            position: relative;
+        }
+      
+        & + span::before {
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.16);
+            border-radius: 50%;
+            content: "";
+            display: block;
+            height: 12px;
+            left: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 12px;
+        }
+          
+        & + span::after {
+            background: rgba(0, 0, 255, 1);
+            border: 1px solid transparent;
+            border-radius: 50%;
+            content: "";
+            height: 6px;
+            left: 3px;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.3s ease 0s;
+            width: 6px;
+        }
+          
+        &:checked + span::after {
+            opacity: 1;
+        }
+        &:checked + span::before {
+            border: 1px solid rgba(0, 0, 255, 1);
+        }
+      }	
+}
+.p-kind{
+    margin-right: 30px;
+}
+.form--text{
+    text-align: left;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    font-size: 1em;
+    padding: 0.4em 0.8em;
+    width: 300px;
+    
+    &:focus {
+        border: 1px solid rgba(255, 0, 0, 0.32);
+        box-shadow: none;
+        outline: none;
+    }
+}
+.form--textarea{
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0, 0.16);
+    border-radius: 5px;
+    text-align: left;
+    font-size: 1em;
+    height: 100px;
+    padding: 8px;
+    width: 100%;
+    resize: none;
+    
+    &:focus {
+    border: 1px solid rgba(0, 0,0, 0.32);
+    box-shadow: none;
+    outline: none;
+    }
+}

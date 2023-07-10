@@ -1,6 +1,6 @@
 @use "../../global" as *;
-.contact{
-    margin-top: 110px;
+.p-contact{
+    margin-top: 40px;
     @include mq(medium, max, true) {
         margin-top:40px;
     }

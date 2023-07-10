@@ -1,21 +1,20 @@
 @use "../../global" as *;
-.company{
+.l-company{
     width: 100%;
-    padding: 140px 0 0 0;
-    background-image: url("../../../img/bg-circle.png");
+    padding: 100px 0;
+    background-image: url("../img/bg-circle.png");
     background-size: cover;
     background-position: top -160% left 50%;
     @include mq(medium, max, true) {
-        padding: 60px 0 0 0;
+        padding: 60px 0;
     }
 }
 .bl-company{
     margin: 0 auto;
-    margin-bottom: 55px;
     max-width: $max-width;
     width: 100%;
     height: auto;
-    background-image: url("../../../img/bg-face.png");
+    background-image: url("../img/bg-face.png");
     background-size:contain;
     background-repeat: no-repeat;
     background-position: top 50% left 50%;
@@ -42,6 +41,7 @@
 }
 .el-companyDescription{
     text-align: center;
+    line-height: 1.8;
     margin-top: 40px;
     margin-bottom: 30px;
     font-size: 15px;
@@ -49,4 +49,90 @@
     @include mq(medium, max, true) {
         @include fontsize(14);
     }
+}
+.p-campanyMessegeT{
+    font-weight: bold;
+    @include fontsize(32);
+    line-height: 1;
+    color: $color-primary;
+}
+.p-greetBox{
+    display:flex;
+    margin-top: 160px;
+    padding: 0 15px;
+    @include mq(medium, max, true) {
+        margin-top: 60px;
+        display: block;
+    }
+}
+.p-greetBoxImg{
+    width: 40%;
+    margin-right: 50px;
+    @include mq(medium, max, true) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+.p-greetBoxText{
+    width: 60%;
+    @include mq(medium, max, true) {
+        width: 100%;
+    }
+    p{
+        @include fontsize(15);
+        line-height: 1.8;
+    }
+}
+.p-companyoutline{
+    padding: 70px 15px;
+    @include mq(medium, max, true) {
+        padding: 40px 15px;
+    }
+}
+.p-companyoutlineBox{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.p-table{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    @include fontsize(15);
+    letter-spacing: 0.75px;
+    @include mq(medium, max, true) {
+        margin-bottom: 60px;
+    }
+    tr{
+        border-bottom: solid 1px #ddd;
+    }
+    th,td{
+        padding: 30px 10px;
+        text-align: left;
+        @include mq(medium, max, true) {
+            display: block;
+            width: 100%;
+        }
+    }
+    th{
+        @include mq(medium, max, true) {
+            padding: 20px 0 5px 0;
+        }
+    }
+    td{
+        @include mq(medium, max, true) {
+            padding: 0 0 20px 0;
+        }
+    }
+}
+.p-map{
+    margin-bottom: 5px;
+    iframe{
+        width: 100%;
+    }
+}
+.p-accesslink{
+    @include fontsize(14);
+    color: #391e88;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
 }

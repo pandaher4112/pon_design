@@ -1,5 +1,5 @@
         <!--contact-->
-        <section id="contact" class="contact">
+        <section id="p-contact" class="p-contact">
             <div class="bl-contact">
                 <div class="bl-contactBox">
                     <div class="bl-commonHeadingBox">

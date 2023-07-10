@@ -51,7 +51,7 @@
             </div>
         </section>
         <!--SERVICE-->
-        <section class="service" id="service">
+        <section class="l-service" id="l-service">
             <div class="bl-service">
                 <div class="bl-serviceBoxs">
                     <div class="bl-commonHeadingBox">
@@ -94,7 +94,7 @@
             </div>
         </section>
         <!--works-->
-        <section class="works" id="works">
+        <section class="l-works" id="l-works">
             <div class="p-worksBox">
                 <div class="bl-works">
                     <div class="bl-worksBox">
@@ -148,7 +148,7 @@
             </div>
         </section>
         <!--recruit-->
-        <section class="recruit" id="recruit">
+        <section class="p-recruit" id="p-recruit">
             <div class="bl-recruit">
                 <div class="bl-recruitBox">
                     <div>

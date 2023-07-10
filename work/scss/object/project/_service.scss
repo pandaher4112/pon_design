@@ -1,8 +1,11 @@
 @use "../../global" as *;
-.service{
-    margin-top: 140px;
+.l-service{
+    padding: 70px 0;
     display: flex;
     justify-content: center;
+    @include mq(medium, max, true) {
+        padding: 40px 0;
+    }
 }
 .bl-service{
     max-width: $max-width;

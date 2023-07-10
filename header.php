@@ -20,6 +20,8 @@
             <a href="../" class="bl-headerLogo">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="PON DESIGN">
             </a>
+        </div>
+        <div>
             <nav class="bl-headerNav">
                 <?php
                     $args = array(
@@ -32,10 +34,10 @@
                     wp_nav_menu($args);
                 ?>
             </nav>
-            <div class="bl-humbergarMenu">
-                <div class="openBtn">
-                    <span></span><span></span><span></span>
-                </div>
+        </div>
+        <div class="bl-humbergarMenu">
+            <div class="openBtn">
+                <span></span><span></span><span></span>
             </div>
         </div>
         <div class="bl-humbergarMenuNav">

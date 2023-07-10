@@ -1,9 +1,9 @@
 @use "../../global" as *;
-.works{
-    margin-top: 140px;
-    width: 100%;
+.l-works{
+   padding: 60px 0 40px 0;
+   width: 100%;
     @include mq(medium, max, true) {
-      margin-top: 40px;
+      padding: 0;
     }
   }
 .p-worksBox{
@@ -13,7 +13,11 @@
 .bl-works{
     max-width: $max-width;
     margin: 0 auto;
+    padding: 60px 20px;
     position: relative;
+    @include mq(medium, max, true) {
+      padding: 30px 20px 60px 20px;
+    }
     &::after{
         content: "";
         top: 0;
@@ -31,12 +35,10 @@
     }
 }
 .bl-worksBox{
-    padding: 60px 0 60px 0;
     display: flex;
     justify-content: space-between;
     @include mq(medium,max,true){
       display: block;
-      padding: 30px 20px 60px 20px;
     }
   }
 .bl-worksBoxImg{

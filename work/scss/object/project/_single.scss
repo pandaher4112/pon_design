@@ -1,6 +1,64 @@
-.single-content{
-    h2{
-        margin: 40px 0 20px;
+@use "../../global" as *;
+.bl-single{
+    margin: 0 auto;
+    padding: 70px 0;
+    max-width: 750px;
+    @include mq(medium, max, true) {
+        padding: 40px 0;
     }
-
+}
+.bl-singleMain{
+    margin: 0 5px;
+    padding: 0 15px;
+}
+.p-singleTitleBox{
+    margin-bottom:30px;
+}
+.p-singleTitle{
+    @include fontsize(32);
+    color: #333;
+    line-height: 1.5;
+    @include mq(medium, max, true) {
+        @include fontsize(22);
+    }
+}
+.p-singleBox{
+    margin: 10px 0 0 0;
+    display: flex;
+}
+.single-content{
+    figure{
+        margin-bottom: 30px;
+    }
+    p{
+        @include fontsize(16);
+        line-height: 1.8;
+    }
+    h2{
+        position: relative;
+        margin: 40px 0 20px;
+        padding: 0 0 0 20px;
+        @include fontsize(24);
+        color: #393636;
+        font-weight: bold;
+        line-height: 1.6;
+        &::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            width: 6px;
+            height: 100%;
+            background-color: #391e88;
+            // border: solid #391e88;
+            border-radius: 3px;
+        }
+    }
+    h3{
+        margin: 40px 0 20px;
+        @include fontsize(18);
+        color: #393636;
+        font-weight: bold;
+        line-height: 1.6;
+    }
 }

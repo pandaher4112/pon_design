@@ -1,17 +1,21 @@
 @use "../../global" as *;
 .bl-header{
     // width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 .bl-headerLogo{
     width: 161px;
-    height: 50%;
+    // height: 50%;
     @include mq(medium, max, true) {
         width: 120px;        
     }
-
+    img{
+        width: 100%;
+        @include mq(medium, max, true) {
+            top: (20px - 7px);
+        }
+    }
 }
 .bl-headerNav{
     @include mq(medium , max, true){

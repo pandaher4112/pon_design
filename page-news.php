@@ -16,11 +16,14 @@ $wp_query = new WP_Query( $args );
 
 <!-- メイン画面 (2023/06/26)  -->
 <main class="p-newspage" id="p-newspae" >
-    <?php get_template_part('template_parts/submv'); ?>
+    <?php
+        $args = ['Title'=>'NEWS','SubTitle'=>'お知らせ','Pan1'=>'NEWS','Link1'=>'news','Pan2'=>'','Link2'=>''];
+        get_template_part('template_parts/submv',null,$args); 
+     ?>
 
     <div class="bl-news">
-        <div class="bl-newsBox">
-            <div class="bl-newsBoxCards">
+        <div class="bl-newsBox noflex">
+            <div class="p-newsBoxCards">
 <?php
 // 取得した記事情報の表示
 if ( $wp_query -> have_posts() ): // 記事情報がある場合はforeachで記事情報を表示
@@ -42,6 +45,11 @@ endif;
     // 一覧情報取得に利用したループをリセットする
     wp_reset_postdata();
 ?>
+            </div>
+            <div class="p-newsPages">
+                <a href="#" class="">1</a>
+                <a href="#" class="other_page">2</a>
+                <a href="#" class="other_page">3</a>
             </div>
         </div>
     </div>
