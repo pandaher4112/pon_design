@@ -26,8 +26,10 @@
                             </div>
                         </div>
                         <div class="p-contactBoxDec">
-                            <div class="p-contactLabel1">お名前</div>
-                            <div class="p-contactLabel2">*必須</div>
+                            <div class="p-contactLabels">
+                                <div class="p-contactLabel1">お名前</div>
+                                <div class="p-contactLabel2">*必須</div>
+                            </div>
                             <input class="form--text" type="text" name="sname">
                         </div>
                         <div class="p-contactBoxDec">
@@ -47,7 +49,7 @@
                         <div class="p-contactBoxDec">
                             <div class="p-contactLabels">
                                 <div class="p-contactLabel1">電話番号</div>
-                                <div class="p-contactLabel2">（半角数字ハイフンなし）</div>
+                                <div class="p-contactLabel3">（半角数字ハイフンなし）</div>
                             </div>
                             <input class="form--text" type="text" name="tel">
                         </div>
@@ -63,7 +65,14 @@
                                 <div class="p-contactLabel1">PON DESIGNをどちらでお知りになりましたか？</div>
                                 <div class="p-contactLabel2">*必須</div>
                             </div>
-                            <input class="form--text" type="text" name="enquete">
+                            <select name="select" id="" class="form--select">
+                                <option value="0">選択してください</option>
+                                <option value="1">Google/Yahoo検索</option>
+                                <option value="2">SNS</option>
+                                <option value="3">ブログ</option>
+                                <option value="4">友人や知人</option>
+                                <option value="5">その他</option>
+                            </select>
                         </div>
                         <button type="submit" class="bl-commonBtn">送信する</button>
                     </form>

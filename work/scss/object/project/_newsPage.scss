@@ -23,15 +23,21 @@
     padding: 8px 0;
 }
 .p-newsPanLink{
-    max-width: $max-width;
     margin: 0 auto;
+    max-width: 1140px;
     padding: 0 15px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    a{
+    @include fontsize(12);
+    @include mq(medium, max, true) {
+        max-width: 780px;        
         @include fontsize(11);
+    }
+    a{
         color: #333;
+        @include mq(medium, max, true) {
+        }
     }
     span{
         &::after{
@@ -76,7 +82,7 @@
 .is-active2{
     position: fixed;
     top: 64px;
-    z-index: 100;
+    z-index: 10;
     width: 100%;
 }
 .other_page{

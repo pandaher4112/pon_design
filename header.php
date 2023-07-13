@@ -12,8 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/vnd.microsoft.icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body <?php body_class(); ?> itemscope itemtype="http://schema.org/webpage">
+    <!-- facebook用の設定 -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v17.0" nonce="DqUtpjoQ"></script>
     <!--header   -->
     <header id="header" class="header">
         <div class="bl-header">

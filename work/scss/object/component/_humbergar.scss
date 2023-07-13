@@ -85,6 +85,7 @@
 
 .bl-humbergarMenuNav{
     opacity: 0;
+    z-index: 99;
     display: none;
     position: fixed;
     justify-content: center;
@@ -101,6 +102,7 @@
 }
 .bl-humbergarMenuNav.show{
     display: flex;
+    z-index: 99;
     opacity: 1;
 }
 .el-humbergarMenuNavList{

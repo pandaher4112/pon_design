@@ -20,6 +20,9 @@
 .p-contactBoxDecs{
     background-color: #f7f7f7;
     padding: 90px;
+    @include mq(medium, max, true) {
+        padding: 30px;
+    }
 }
 .p-contactBoxDec{
     text-align: left;
@@ -37,10 +40,15 @@
 .p-contactLabel2{
     margin-left: 10px;
     font-weight: bold;
+    color: $color-primary;
     @include fontsize(12);
 }
 .p-contactkind{
     text-align: left;
+    display: block;
+    @include mq(medium, max, true) {
+        display: grid;
+    }
     .form--radio {
         display: none;
         & + span {
@@ -65,7 +73,7 @@
         }
           
         & + span::after {
-            background: rgba(0, 0, 255, 1);
+            background: rgb(42, 125, 233);
             border: 1px solid transparent;
             border-radius: 50%;
             content: "";
@@ -83,7 +91,7 @@
             opacity: 1;
         }
         &:checked + span::before {
-            border: 1px solid rgba(0, 0, 255, 1);
+            border: 1px solid rgba(42, 125, 233, 1);
         }
       }	
 }
@@ -99,7 +107,9 @@
     font-size: 1em;
     padding: 0.4em 0.8em;
     width: 300px;
-    
+    @include mq(medium, max, true) {
+        width: 100%;
+    }
     &:focus {
         border: 1px solid rgba(255, 0, 0, 0.32);
         box-shadow: none;
@@ -123,4 +133,26 @@
     box-shadow: none;
     outline: none;
     }
+}
+.form--select{
+    appearance: none;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    padding: 0.4em 0.8em;
+    width: 100%;
+    
+    &::-ms-expand {
+    display: none;
+    }
+
+    &:focus {
+        border: 1px solid rgba(0, 0, 0, 0.32);
+        box-shadow: none;
+        outline: none;
+    }  
 }

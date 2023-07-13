@@ -127,7 +127,7 @@
             </div>
         </section>
         <!--conpany-->
-        <section class="company" id="company">
+        <section class="l-company" id="l-company">
             <!-- 背景 -->
             <div class="bl-company">
                 <div class="bl-commonHeadingBox">

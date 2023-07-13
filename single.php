@@ -37,6 +37,32 @@
                 <div class="single-content">
                     <?php echo the_content()?>
                 </div>
+                <div class="sns">
+                    <ul class="snsList">
+                        <li class="snsbtn_good">
+                            <div class="fb-like" data-href="http://localhost:3000/news_link1/" data-width="90" data-layout="" data-action="" data-size="" data-share="true"></div>
+                        </li>
+                        <!-- <li class="snsbtn_facebook"><i class="fa fa-twitter"></i>シェア</li> -->
+                        <li class="snsbtn_twitter "><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-lang="ja" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+                        <li class="snsbtn_bibook"><a href="https://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label" data-hatena-bookmark-lang="ja" data-hatena-bookmark-height="20" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+                        <li class="snsbtn_line"><img src="<?php echo get_template_directory_uri(); ?>/img/LINE_Brand_icon.png" alt="lineアイコン"></li>
+                    </ul>
+                </div>
+                <div class="p-newsEndContbox">
+                    <a href="#" class="p-newsEndCont">
+                        <span>
+                            Web Conference様のサイトを制作いたしました    
+                        </span>
+                    </a>
+                    <a href="#" class="p-newsEndCont">
+                        <span>
+                        プライバシーマーク取得のお知らせ   
+                        </span>
+                    </a>
+                </div>
+                <div class="p-newslistbox">
+                    <a href="/news" class="p-newslist">NEWS一覧</a>
+                </div>
             </div>
         </div>
 

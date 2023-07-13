@@ -5,9 +5,11 @@
 }
 .pl-recruitMessege{
     padding: 70px 0;
+    line-height: 1;
     text-align: center;
     @include mq(medium, max, true) {
         padding: 40px 0;
+        line-height: 1.2;
     }
     p{
         @include fontsize(15);
@@ -75,8 +77,15 @@
 .p-recruitDecTitle{
     margin-bottom: 30px;
     text-align: center;
-    font-weight: bold;
-    @include fontsize(24);
+    p{
+        font-weight: bold;
+        letter-spacing: 0.75px;
+        @include fontsize(24);
+        @include mq(medium, max, true) {
+            letter-spacing: 0.7px;
+            @include fontsize(16);
+        }
+    }
 }
 .p-table{
     margin-bottom: 50px;
